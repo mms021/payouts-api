@@ -1,0 +1,24 @@
+# Django и DRF
+Django>=4.2,<5.0
+djangorestframework>=3.14.0
+drf-spectacular>=0.26.0
+
+# База данных
+psycopg2-binary>=2.9.9
+
+# Celery и Redis
+celery[redis]>=5.3.0
+redis>=5.0.0
+
+# Утилиты
+python-dotenv>=1.0.0
+
+# Линтеры и форматтеры
+black>=23.0.0
+flake8>=6.0.0
+
+# Тестирование
+pytest>=7.4.0
+pytest-django>=4.5.0
+pytest-cov>=4.1.0
+
