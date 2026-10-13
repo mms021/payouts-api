@@ -1,5 +1,7 @@
 # Payouts API
 
+[![CI](https://github.com/mms021/payouts-api/actions/workflows/ci.yml/badge.svg)](https://github.com/mms021/payouts-api/actions/workflows/ci.yml)
+
 REST-сервис для управления заявками на выплату средств с асинхронной обработкой через Celery.
 
 ## Технологический стек
@@ -30,9 +32,8 @@ REST-сервис для управления заявками на выплат
 **Запуск проекта:**
 
 ```bash
-# Клонирование репозитория (если используется Git)
-git clone <repository-url>
-cd test_django_app
+git clone https://github.com/mms021/payouts-api.git
+cd payouts-api
 
 # Запуск всех сервисов одной командой
 docker-compose up --build
@@ -93,8 +94,8 @@ docker-compose exec web python manage.py test
 
 1. **Клонирование репозитория** (если используется Git):
 ```bash
-git clone <repository-url>
-cd test_django_app
+git clone https://github.com/mms021/payouts-api.git
+cd payouts-api
 ```
 
 2. **Создание виртуальной среды**:
@@ -209,7 +210,7 @@ pytest --cov=payouts --cov-report=html
 ## Структура проекта
 
 ```
-test_django_app/
+payouts-api/
 ├── config/                 # Конфигурация Django проекта
 │   ├── settings/          # Настройки по окружениям
 │   ├── celery.py          # Конфигурация Celery
@@ -348,7 +349,7 @@ sudo su - payouts
 
 # Клонирование репозитория
 cd /home/payouts
-git clone <repository-url> payouts_app
+git clone https://github.com/mms021/payouts-api.git payouts_app
 cd payouts_app
 
 # Создание виртуальной среды
